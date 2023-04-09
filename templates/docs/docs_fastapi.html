@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>
+            Hearthstone API
+        </title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h3>Documentation for Hearthstone API</h3>
+        </div>
+        <div>
+            <a href="/docs" class="btn">
+                API
+            </a>
+        </div>
+        <hr>
+        <form action="/show_card">Show cards Data
+            <input type="text" name="card_name">
+            <button type="submit">Submit</button>
+        </form>
+        <hr>
+        <div>
+            <h1>{{ card.name }}</h1>
+            <h2>Attributes:</h2>
+            
+            <ul>class: {{ card.cardClass }} </ul>
+            <ul>type: {{ card.type }} </ul>
+            <ul>attack: {{ card.attack }} </ul>
+            <ul>health: {{ card.health }} </ul>
+            <ul>flavor: {{ card.flavor }} </ul>
+            <ul>cost: {{ card.cost }} </ul>
+            <ul>{{ card.text | safe }} </ul>
+        </div>
+            
+        </div>
+    </body>
+</html>

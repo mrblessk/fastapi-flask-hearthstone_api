@@ -1,0 +1,12 @@
+<div>
+    <h1>{{ card.name }}</h1>
+    <h2>Attributes:</h2>
+    
+    <ul>class: {{ card.cardClass }} </ul>
+    <ul>type: {{ card.type }} </ul>
+    <ul>attack: {{ card.attack }} </ul>
+    <ul>health: {{ card.health }} </ul>
+    <ul>flavor: {{ card.flavor }} </ul>
+    <ul>cost: {{ card.cost }} </ul>
+    <ul>{{ card.text | safe }} </ul>
+</div>

@@ -1,0 +1,9 @@
+venv
+.venv
+env
+.env
+/js
+/models
+/script
+*.js
+*.pyc
